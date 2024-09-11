@@ -1,0 +1,270 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: white;
+  /* background-image: linear-gradient(#acb6e5, #86fde8); */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Header */
+#submit-btn{
+  transition: all .5s ease;
+  scale: 1;
+}
+#submit-btn:hover{
+  transition: all .5s ease;
+  scale: 1.05;
+}
+.header {
+  background-color: white;
+  position: fixed;
+  width: 100vw;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+.header-logo {
+  width: 500px;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+.header-logo p {
+  font-size: 2rem;
+  margin-right: 20px;
+}
+.header-navbar {
+  width: 800px;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar a {
+  margin-inline: 30px;
+  color: green;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: 0.5s ease;
+}
+.navbar a:hover {
+  transition: 0.5s ease;
+  color: black;
+}
+.navbar span {
+  margin-top: 5px;
+  font-size: 2rem;
+}
+.header-login {
+  width: 500px;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-box {
+  width: 150px;
+  height: 50px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+  color: white;
+  box-shadow: 2px 3px rgb(46, 46, 46);
+  scale: 0.9;
+  transition: 0.5s ease;
+}
+.login-box:hover {
+  transition: 0.5s ease;
+  scale: 1;
+}
+.login-box button {
+  all: unset;
+}
+
+.bookCard {
+  width: 100vw;
+  height: auto;
+  padding-top: 150px;
+}
+.bookBox {
+  background-color: red;
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 100px;
+  padding-top: 50px;
+  flex-wrap: wrap;
+  margin: auto;
+  /* kalo MT-100 bearti ado fitur aktif */
+  margin-top: 0px;
+  opacity: 1;
+  /* Kagek ubah ini */
+}
+.bookContain {
+  width: 300px;
+  height: 550px;
+  overflow: hidden;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  color: black;
+}
+.bookContain:hover{
+  color: #22acb5;
+  -webkit-text-stroke: 1px solid black;
+}
+.bookContain p {
+  text-align: center;
+}
+.bookImg {
+  width: inherit;
+  height: 400px;
+}
+.bookImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.icon {
+  height: auto;
+  font-size: 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.icon span {
+  margin-inline: 5px;
+  margin-top: 5px;
+  scale: 0.9;
+  transition: all 0.5s linear;
+}
+.icon span:hover {
+  transition: all 0.1s linear;
+  scale: 1;
+}
+.bookTitleBox {
+  height: auto;
+  text-align: center;
+  padding: 5px;
+}
+.bookTitleBox p {
+  font-size: 1.1rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.searchingCard {
+  width: auto;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.searchBox {
+  border-bottom: 2px solid black;
+  width: 800px;
+  height: 50px;
+  margin-left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-radius: 10px; */
+  transition: all 0.5s ease;
+}
+.searchBox:hover {
+  transition: all 0.5s ease;
+  border-bottom: 2px solid blue;
+}
+.searchBox input {
+  all: unset;
+  width: 700px;
+  height: 30px;
+}
+.optionCard {
+  position: absolute;
+  height: auto;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid black; */
+}
+.optionBox {
+  background-color: transparent;
+  width: 350px;
+  height: auto;
+  overflow: hidden;
+  /* border: 1px solid black; */
+}
+.optionFill,
+.headOption {
+  margin: auto;
+  margin-block: 10px;
+  background-color: rgb(40, 46, 40);
+  width: 300px;
+  height: 50px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px black;
+  display: flex;
+  align-items: center;
+  padding-inline: 30px;
+  color: white;
+}
+.optionFill {
+  height: 0px;
+}
+.optionFill:hover {
+  scale: 1.1;
+  background-color: #22acb5;
+}
+.optionFill ul,
+.headOption ul {
+  margin: auto;
+}
+.optionFill li {
+  list-style-type: circle;
+}
+.optionFill {
+  transition: all 0.2s ease;
+  transform: translateX(-350px);
+}
+
+@media only screen and (max-width: 1366px) {
+  .header-logo p {
+    font-size: 1.5rem;
+    margin-right: 20px;
+  }
+  .navbar a {
+    margin-inline: 15px;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header-login {
+    justify-content: center;
+    width: 300px;
+  }
+  .header-logo p {
+    font-size: 1rem;
+    margin-right: 20px;
+  }
+  .navbar a {
+    margin-inline: 15px;
+    font-size: 0.8rem;
+  }
+}

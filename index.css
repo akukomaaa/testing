@@ -1,0 +1,528 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Kavoon", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+html {
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+/* Header */
+#submit-btn {
+  transition: all 0.5s ease;
+  scale: 1;
+}
+#submit-btn:hover {
+  transition: all 0.5s ease;
+  scale: 1.05;
+}
+.header {
+  background-color: white;
+  position: fixed;
+  width: 100vw;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+.header-logo {
+  width: 500px;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+.header-logo p {
+  font-size: 2rem;
+  margin-right: 20px;
+}
+.header-navbar {
+  width: 800px;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar a {
+  margin-inline: 30px;
+  color: green;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: 0.5s ease;
+}
+.navbar a:hover {
+  transition: 0.5s ease;
+  color: black;
+}
+.navbar span {
+  margin-top: 5px;
+  font-size: 2rem;
+}
+.header-login {
+  width: 500px;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-box {
+  width: 150px;
+  height: 50px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+  color: white;
+  box-shadow: 2px 3px rgb(46, 46, 46);
+  scale: 0.9;
+  transition: 0.5s ease;
+}
+.login-box:hover {
+  transition: 0.5s ease;
+  scale: 1;
+}
+.login-box button {
+  all: unset;
+}
+
+/* Intro */
+.intro {
+  padding-top: 150px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.intro-box {
+  width: 800px;
+  height: auto;
+  padding-top: 120px;
+}
+#ib-forpic {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+}
+.ib-fill {
+  width: inherit;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding-left: 200px;
+}
+.ib-fill p {
+  font-size: 3rem;
+  color: white;
+  -webkit-text-stroke: 2px green;
+}
+.explore-box {
+  width: 250px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  background-color: green;
+  color: white;
+  box-shadow: 0px 5px rgb(46, 46, 46);
+  scale: 0.9;
+  transition: 0.5s ease;
+  z-index: 0;
+}
+.explore-box:hover {
+  transition: 0.5s ease;
+  scale: 1;
+}
+.explore-box button {
+  all: unset;
+}
+.ib-imgbox {
+  width: 500px;
+  height: 500px;
+  user-select: none;
+}
+.ib-imgbox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Quotes */
+.quotes {
+  padding-top: 100px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.quotes-card {
+  width: 1200px;
+  height: auto;
+  display: flex;
+  overflow: hidden;
+}
+.quotes-box {
+  width: inherit;
+  height: auto;
+  display: flex;
+  animation: slider 25s steps(3) infinite;
+}
+@keyframes slider {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-3600px);
+  }
+}
+.qb-text {
+  width: 800px;
+  height: inherit;
+}
+.qbt {
+  width: inherit;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+.qbt p {
+  font-size: 3rem;
+}
+#theQuotes {
+  margin-bottom: 100px;
+}
+#qbt-author p {
+  font-size: 2rem;
+  color: blue;
+}
+#qbt-position p {
+  font-size: 2rem;
+  color: black;
+}
+.qb-pic {
+  width: 400px;
+  height: inherit;
+}
+.qb-pic img {
+  width: 400px;
+  height: 400px;
+  object-fit: contain;
+}
+
+/* contact */
+.contact {
+  padding-top: 150px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-card {
+  width: 800px;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-top: 50px;
+}
+.input-box {
+  width: 600px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  padding-inline: 20px;
+  background-color: green;
+  box-shadow: 0px 5px 5px 0px rgb(46, 46, 46);
+  margin-block: 20px;
+  /* scale: 0.5; */
+  transition: all 0.8s ease;
+}
+.input-box input {
+  all: unset;
+  width: 450px;
+  height: 30px;
+  margin-left: 10px;
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  padding-inline: 10px;
+}
+.input-box label {
+  color: white;
+}
+#comment-input {
+  height: 300px;
+}
+.input-box textarea {
+  width: 550px;
+  height: 250px;
+  border-radius: 30px;
+  padding: 30px;
+  border: none;
+  outline: none;
+}
+.input-box button {
+  all: unset;
+  color: white;
+}
+
+/* footer */
+.foot {
+  background-color: rgb(46, 46, 46);
+  width: 100vw;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  display: none;
+}
+.footCard {
+  /* border: 1px solid white; */
+  width: inherit;
+  height: 250px;
+  margin-block: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.footBox {
+  width: 50%;
+  height: inherit;
+}
+.textFoot {
+  margin-inline: 10px;
+  font-size: 2.5rem;
+  color: green;
+}
+#sosmedBox {
+  justify-content: center;
+}
+.sosmedBox {
+  width: auto;
+  height: auto;
+  margin-inline: 30px;
+  display: grid;
+  place-items: center;
+}
+.sosmedBox span {
+  font-size: 3rem;
+}
+.sosmedBox a {
+  color: white;
+}
+
+@media only screen and (max-width: 1366px) {
+  .contact {
+    padding-top: 100px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-card {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 0px;
+  }
+  .input-box {
+    width: 400px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    padding-inline: 20px;
+    background-color: #22acb5;
+    box-shadow: 0px 5px 5px 0px rgb(46, 46, 46);
+    margin-block: 10px;
+    /* scale: 0.5; */
+    transition: all 0.8s ease;
+  }
+  .input-box input {
+    all: unset;
+    width: 250px;
+    height: 20px;
+    margin-left: 10px;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    padding-inline: 10px;
+    font-size: 0.8rem;
+  }
+  .input-box label {
+    color: white;
+  }
+  #comment-input {
+    height: 200px;
+  }
+  .input-box textarea {
+    width: 450px;
+    height: 150px;
+    border-radius: 30px;
+    padding: 30px;
+    border: none;
+    outline: none;
+  }
+}
+@media only screen and (max-width: 1366px) {
+  .intro{
+    /* background-color: red; */
+    padding-top: 200px;
+  }
+  .quotes {
+    padding-top: 100px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .quotes-card {
+    width: 800px;
+    height: auto;
+    display: flex;
+    overflow: hidden;
+  }
+  .quotes-box {
+    width: inherit;
+    height: auto;
+    display: flex;
+    animation: slider 25s steps(3) infinite;
+  }
+  @keyframes slider {
+    from {
+      transform: translateX(0px);
+    }
+    to {
+      transform: translateX(-2400px);
+    }
+  }
+  .qb-text {
+    width: 500px;
+    height: inherit;
+  }
+  /* btas */
+  .qbt p {
+    font-size: 2rem;
+  }
+  #theQuotes {
+    margin-block: 50px;
+  }
+  #qbt-author p {
+    font-size: 1rem;
+    color: blue;
+  }
+  #qbt-position p {
+    font-size: 1rem;
+    color: black;
+  }
+  .qb-pic {
+    width: 400px;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .qb-pic img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+  }
+}
+
+@media only screen and (min-height: 1080px) {
+  .intro,
+  .quotes,
+  .contact,
+  .foot {
+    height: auto;
+  }
+  .foot {
+    margin-top: 100px;
+  }
+  .contact {
+    padding-block: 50px;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .header-logo p {
+    font-size: 1.5rem;
+    margin-right: 20px;
+  }
+  .navbar a {
+    margin-inline: 15px;
+    font-size: 1rem;
+  }
+  .intro-box {
+    width: 750px;
+    height: auto;
+    padding-top: 0px;
+  }
+  #ib-forpic {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+  }
+  .ib-fill {
+    padding-left: 150px;
+  }
+  .ib-imgbox {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .header-login {
+    justify-content: center;
+    width: 300px;
+  }
+  .header-logo p {
+    font-size: 1rem;
+    margin-right: 20px;
+  }
+  .navbar a {
+    margin-inline: 15px;
+    font-size: 0.8rem;
+  }
+  .intro-box {
+    width: 700px;
+    height: auto;
+    padding-top: 0px;
+  }
+  #ib-forpic {
+    width: 350px;
+    display: flex;
+    justify-content: center;
+  }
+  .ib-fill {
+    padding-left: 100px;
+  }
+  .ib-imgbox {
+    width: 300px;
+    height: 300px;
+  }
+}

@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kavoon&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-logo">
+        <p><span style="color: green">Matcha</span>Math</p>
+        <img
+          src="logo.png"
+          alt=""
+          width="100"
+          height="100"
+          style="object-fit: contain"
+        />
+      </div>
+      <div class="header-navbar">
+        <nav class="navbar">
+          <a href="#">Home</a>
+          <a href="library.html">Library</a>
+          <a href="#">About</a>
+          <a href="#contact">Contact Us</a>
+          <span id="addBook"
+            ><ion-icon name="add-circle-outline"></ion-icon
+          ></span>
+        </nav>
+      </div>
+      <div class="header-login">
+        <div class="login-box">
+          <button>Login</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Intro -->
+    <section class="intro">
+      <div class="intro-box">
+        <div class="ib-fill">
+          <p>CREAMY</p>
+        </div>
+        <div class="ib-fill">
+          <p>MATCHA LATTE</p>
+        </div>
+        <div class="ib-fill">
+          <p>
+            DRINK <span style="color: green">Matcha</span
+            ><span style="color: black; -webkit-text-stroke: 0px">Math</span>
+          </p>
+        </div>
+        <div class="ib-fill">
+          <a href="#onLauching" style="text-decoration: none">
+            <div class="explore-box" id="lauchingNow">
+              <button>Explore Now</button>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="intro-box" id="ib-forpic">
+        <div class="ib-imgbox">
+          <img src="intro.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Quotes -->
+    <section class="quotes" id="onLauching">
+      <div class="quotes-card">
+        <div class="quotes-box">
+          <div class="qb-text">
+            <div class="qbt" id="theQuotes">
+              <p>
+                Jika kamu tidak tahan terhadap lelahnya belajar, maka kamu akan
+                menanggung bahayanya kebodohan
+              </p>
+            </div>
+            <div class="qbt" id="qbt-author">
+              <p>~ Imam Syafi'i</p>
+            </div>
+            <div class="qbt" id="qbt-position">
+              <p>Pendiri Mazhab Syafi'i</p>
+            </div>
+          </div>
+          <div class="qb-pic">
+            <img src="imamSyafii.png" alt="" />
+          </div>
+        </div>
+        <div class="quotes-box">
+          <div class="qb-text">
+            <div class="qbt" id="theQuotes">
+              <p>
+                Reading is important. If you know how to read, then the whole
+                world opens up to you
+              </p>
+            </div>
+            <div class="qbt" id="qbt-author">
+              <p>~ Barack Obama</p>
+            </div>
+            <div class="qbt" id="qbt-position">
+              <p>44th-President of the United States</p>
+            </div>
+          </div>
+          <div class="qb-pic">
+            <img src="obama.png" alt="" />
+          </div>
+        </div>
+        <div class="quotes-box">
+          <div class="qb-text">
+            <div class="qbt" id="theQuotes">
+              <p>The measure of intelligence is the ability to change</p>
+            </div>
+            <div class="qbt" id="qbt-author">
+              <p>~ Albert Einstein</p>
+            </div>
+            <div class="qbt" id="qbt-position">
+              <p>Physicist</p>
+            </div>
+          </div>
+          <div class="qb-pic">
+            <img src="einstein.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section class="contact" id="contact">
+      <div class="form-card">
+        <form action="#" method="post">
+          <div class="input-box">
+            <label for="email">Email : </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              autocomplete="off"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <label for="phone">Phone : </label>
+            <input
+              type="text"
+              name="phone"
+              id="phone"
+              inputmode="numeric"
+              autocomplete="off"
+              required
+            />
+          </div>
+          <div class="input-box" id="comment-input">
+            <textarea
+              name="comment"
+              id="comment"
+              placeholder="Comment :"
+              maxlength="100"
+            ></textarea>
+          </div>
+          <div class="input-box" id="submit-btn">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="foot">
+      <div class="footCard">
+        <div class="foodBox">
+          <div class="textFoot">
+            Matcha<span style="color: black">Math</span>
+          </div>
+        </div>
+        <div class="foodBox">
+          <img
+            src="logo.png"
+            alt=""
+            width="100"
+            height="100"
+            style="object-fit: contain"
+          />
+        </div>
+      </div>
+      <div class="footCard" id="sosmedBox">
+        <div class="sosmedBox">
+          <span style="color: rgb(245, 67, 67)"
+            ><ion-icon name="logo-instagram"></ion-icon
+          ></span>
+          <a href="#"><p>Instagram</p></a>
+        </div>
+        <div class="sosmedBox">
+          <span style="color: red"
+            ><ion-icon name="logo-youtube"></ion-icon
+          ></span>
+          <a href="#"><p>Youtube</p></a>
+        </div>
+        <div class="sosmedBox">
+          <span style="color: blue"
+            ><ion-icon name="logo-facebook"></ion-icon
+          ></span>
+          <a href="#"><p>Facebook</p></a>
+        </div>
+      </div>
+      <div class="footCard"></div>
+    </footer>
+
+    <style>
+      .acces-user {
+        background-color: transparent;
+        backdrop-filter: blur(10px);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 3;
+        scale: 0;
+      }
+      .au-box {
+        width: auto;
+        height: auto;
+        display: flex;
+        align-items: center;
+        padding: 50px;
+        overflow: hidden;
+      }
+      .aub-login {
+        position: absolute;
+        background-color: white;
+        box-shadow: 5px 5px 5px 5px rgb(46, 46, 46);
+        border-radius: 30px;
+        width: 400px;
+        height: inherit;
+        display: flex;
+        justify-content: center;
+        z-index: 2;
+      }
+      #topTitle {
+        font-size: 3rem;
+        text-align: center;
+        margin: 50px 0px 30px 0px;
+      }
+      .inputBoxform {
+        border: 1px solid black;
+        border-radius: 30px;
+        width: 350px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-block: 10px;
+      }
+      .inputBoxform input {
+        all: unset;
+        width: 300px;
+        height: 30px;
+      }
+      #login-submit {
+        text-align: center;
+        margin-block: 50px;
+      }
+
+      .aub-sign {
+        background-color: white;
+        box-shadow: 5px 5px 5px 5px rgb(46, 46, 46);
+        border-radius: 30px;
+        width: 400px;
+        height: inherit;
+        display: flex;
+        justify-content: center;
+      }
+      #aub-sign {
+        z-index: 0;
+        scale: 0.5;
+      }
+    </style>
+
+    <!-- Access-card -->
+    <section class="acces-user">
+      <div class="au-box">
+        <div class="aub-login" id="aub-login">
+          <form action="#">
+            <p id="topTitle">Login</p>
+            <div class="inputBoxform">
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="username"
+                required
+                autocomplete="off"
+              />
+            </div>
+            <div class="inputBoxform">
+              <input
+                class="passwordCheck"
+                type="password"
+                name="password"
+                id="password"
+                placeholder="password"
+                required
+                autocomplete="off"
+              />
+              <span style="margin-top: 5px"
+                ><ion-icon class="close-eye" name="eye-off"></ion-icon
+              ></span>
+            </div>
+            <p
+              style="
+                color: blue;
+                text-decoration: underline;
+                text-align: center;
+              "
+            >
+              <!-- Forgot a password ? -->
+            </p>
+            <div
+              class="inputBoxform"
+              id="login-submit"
+              style="margin-bottom: 0px"
+            >
+              <input type="submit" value="Login" />
+            </div>
+            <p style="margin-bottom: 50px; text-align: center">
+              Don't have a account ?
+              <span
+                id="signSlide"
+                style="color: blue; text-decoration: underline"
+                >Sign</span
+              >
+            </p>
+          </form>
+        </div>
+        <div class="aub-sign" id="aub-sign">
+          <form action="#">
+            <p id="topTitle">Sign</p>
+            <div class="inputBoxform">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="email"
+                required
+                autocomplete="off"
+              />
+            </div>
+            <div class="inputBoxform">
+              <input
+                class="passwordCheck"
+                type="password"
+                name="password"
+                id="password"
+                placeholder="email password"
+                required
+                autocomplete="off"
+              />
+              <span style="margin-top: 5px"
+                ><ion-icon class="close-eye" name="eye-off"></ion-icon
+              ></span>
+            </div>
+            <div class="inputBoxform">
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="create username"
+                required
+                autocomplete="off"
+              />
+            </div>
+            <div class="inputBoxform">
+              <input
+                class="passwordCheck"
+                type="password"
+                name="password"
+                id="password"
+                placeholder="create password"
+                required
+                autocomplete="off"
+              />
+              <span style="margin-top: 5px"
+                ><ion-icon class="close-eye" name="eye-off"></ion-icon
+              ></span>
+            </div>
+            <div class="inputBoxform">
+              <input
+                class="passwordCheck"
+                type="password"
+                name="password"
+                id="password"
+                placeholder="confirm password"
+                required
+                autocomplete="off"
+              />
+              <span style="margin-top: 5px"
+                ><ion-icon class="close-eye" name="eye-off"></ion-icon
+              ></span>
+            </div>
+            <div
+              class="inputBoxform"
+              id="login-submit"
+              style="margin-bottom: 0px"
+            >
+              <input type="submit" value="Login" />
+            </div>
+            <p style="margin-bottom: 50px; text-align: center">
+              Already have a account ?
+              <span
+                id="loginSlide"
+                style="color: blue; text-decoration: underline"
+                >Login</span
+              >
+            </p>
+          </form>
+          <style>
+            .acces-user p {
+              cursor: pointer;
+            }
+          </style>
+        </div>
+      </div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
