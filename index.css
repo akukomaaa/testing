@@ -293,7 +293,6 @@ html {
   height: 300px;
   display: flex;
   justify-content: center;
-  display: none;
 }
 .footCard {
   /* border: 1px solid white; */
